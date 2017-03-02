@@ -1,6 +1,36 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+nav {
+	border-bottom: 1px solid $black;
+
+	span#logo {
+		float: left;
+
+		img {
+			width: 200px;
+			margin: 10px 0;
+		}
+	}
+
+	span#contents {
+		float: right;
+		display: block;
+
+		ul{
+			@include oswald-medium;
+			font-size: 20px;
+			color: $black;
+
+			li{
+				display: inline-block;
+				margin: 25px 0 0 50px;
+			}
+		}
+	}
+
+}
+
 img.site-images {
 	width: 100%;
 	height: auto;

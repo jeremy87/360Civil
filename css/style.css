@@ -1,0 +1,28 @@
+/* SCREEN SIZE BREAK POINTS */
+/* COLORS */
+/* FONTS */
+/* MIXINS */
+nav {
+  border-bottom: 1px solid #1e1e1e; }
+  nav span#logo {
+    float: left; }
+    nav span#logo img {
+      width: 200px;
+      margin: 10px 0; }
+  nav span#contents {
+    float: right;
+    display: block; }
+    nav span#contents ul {
+      font-family: "Oswald", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      color: #1e1e1e; }
+      nav span#contents ul li {
+        display: inline-block;
+        margin: 25px 0 0 50px; }
+
+img.site-images {
+  width: 100%;
+  height: auto; }
+
+/* IT'S 2017, YOU'RE DAMN RIGHT IT'S MOBILE-ISH FRIENDLY */

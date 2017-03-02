@@ -15,3 +15,19 @@
   -o-background-size: ($property);
   background-size: ($property);
 }
+
+@mixin oswald-light {
+  font-family: $main;
+  font-weight: 300;
+}
+
+@mixin oswald-medium {
+  font-family: $main;
+  font-weight: 500;
+}
+
+@mixin oswald-bold {
+  font-family: $main;
+  font-weight: 700;
+  color: $white;
+}
