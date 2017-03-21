@@ -2,14 +2,18 @@
 @import "partials/mixins";
 
 nav {
-	border-bottom: 1px solid $black;
+	background-color: rgba(255, 255, 255, 0.95);
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
 
 	span#logo {
 		float: left;
 
 		img {
 			width: 200px;
-			margin: 10px 0;
+			padding: 10px 0;
 		}
 	}
 
@@ -24,16 +28,183 @@ nav {
 
 			li{
 				display: inline-block;
-				margin: 25px 0 0 50px;
+				margin: 0 0 0 50px;
+				padding: 25px 0;
 			}
 		}
 	}
 
 }
 
-img.site-images {
-	width: 100%;
-	height: auto;
+header {
+	@include linear-gradient;
+  	@include background-size(cover);
+	background-position: center center;
+  	height: 75vh;
+  	text-align: center;
+  	z-index: 0;
+
+	#hero-image {
+		padding-top: 35vh;
+
+		.container {
+			width: 70%;
+
+			h1 {
+				@include oswald-bold;
+				font-size: 6em;
+				color: $red;
+				text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+			}
+
+			h3 {
+				@include oswald-medium;
+				font-size: 2em;
+				color: $white;
+				margin: 10px 0 20px;
+				text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+			}
+
+			h5 {
+				@include oswald-light;
+				font-size: 1.4em;
+				color: $white;
+				text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+			}
+		}
+	}
+}
+
+main {
+	
+	section#about {
+		padding: 50px 0;
+
+		.thin {
+			width: 65%;
+			text-align: center;
+
+			h2 {
+				@include oswald-bold;
+				color: $red;
+				font-size: 4em;
+				margin: 0 0 15px;
+			}
+
+			p.main-copy {
+				font-family: $copy;
+				font-size: 1.4em;
+				color: $black;
+				margin-bottom: 25px;
+			}
+
+			button {
+				@include oswald-bold;
+				background-color: $red;
+				color: $white;
+				font-size: 1.2em;
+				text-transform: uppercase;
+				padding: 10px 35px;
+				border: none;
+			}
+		}
+	}
+
+	section#why-360 {
+		background-color: $light-grey;
+		padding: 50px 0;
+		text-align: center;
+
+		.container {
+
+			h2 {
+				@include oswald-bold;
+				color: $red;
+				font-size: 4em;
+				margin: 0 0 15px;
+			}
+
+			p.main-copy {
+				font-family: $copy;
+				font-size: 1.4em;
+				color: $black;
+				margin-bottom: 50px;
+			}
+
+			h4 {
+				@include oswald-medium;
+				color: $red;
+				font-size: 1.4em;
+				text-transfrom: uppercase;
+				margin-top: 25px;
+			}
+		}
+	}
+}
+
+section#site-photos {
+	
+	.container-fluid {
+
+		#top-photos {
+			margin-bottom: 10px;
+		}
+
+		.col-lg-3 {
+			margin: 0;
+			padding: 0;
+
+			img.site-images {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+section#contact {
+	padding: 50px;
+
+	h2 {
+		@include oswald-bold;
+		color: $red;
+		font-size: 4em;
+		margin: 0 0 15px;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	form {
+
+		input {
+			width: 100%;
+			margin-bottom: 10px;
+			height: 40px;
+			padding: 5px 10px;
+			border: 1px solid $black;
+			font-family: $copy;
+		}
+
+		textarea {
+			width: 100%;
+			height: 150px;
+			padding: 5px 10px;
+			border: 1px solid black;
+			font-family: $copy;
+		}
+
+		input#button {
+			@include oswald-bold;
+			background-color: $red;
+			color: $white;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			padding: 10px 35px;
+			border: none;
+			width: 30%;
+			margin-top: 10px;
+		}
+	}
 }
 
 /* IT'S 2017, YOU'RE DAMN RIGHT IT'S MOBILE-ISH FRIENDLY */

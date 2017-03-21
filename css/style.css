@@ -3,12 +3,16 @@
 /* FONTS */
 /* MIXINS */
 nav {
-  border-bottom: 1px solid #1e1e1e; }
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
   nav span#logo {
     float: left; }
     nav span#logo img {
       width: 200px;
-      margin: 10px 0; }
+      padding: 10px 0; }
   nav span#contents {
     float: right;
     display: block; }
@@ -19,10 +23,146 @@ nav {
       color: #1e1e1e; }
       nav span#contents ul li {
         display: inline-block;
-        margin: 25px 0 0 50px; }
+        margin: 0 0 0 50px;
+        padding: 25px 0; }
 
-img.site-images {
-  width: 100%;
-  height: auto; }
+header {
+  background: -moz-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/360Civil-heroimage@2x.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, transparent), color-stop(100%, rgba(0, 0, 0, 0.95))), url(../images/360Civil-heroimage@2x.jpg) no-repeat;
+  background: -webkit-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/360Civil-heroimage@2x.jpg) no-repeat;
+  background: -o-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/360Civil-heroimage@2x.jpg) no-repeat;
+  background: -ms-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/360Civil-heroimage@2x.jpg) no-repeat;
+  background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.95) 100%), url(../images/360Civil-heroimage@2x.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 75vh;
+  text-align: center;
+  z-index: 0; }
+  header #hero-image {
+    padding-top: 35vh; }
+    header #hero-image .container {
+      width: 70%; }
+      header #hero-image .container h1 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        font-size: 6em;
+        color: #b72121;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
+      header #hero-image .container h3 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        font-size: 2em;
+        color: #fff;
+        margin: 10px 0 20px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
+      header #hero-image .container h5 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 1.4em;
+        color: #fff;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
+
+main section#about {
+  padding: 50px 0; }
+  main section#about .thin {
+    width: 65%;
+    text-align: center; }
+    main section#about .thin h2 {
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      color: #fff;
+      color: #b72121;
+      font-size: 4em;
+      margin: 0 0 15px; }
+    main section#about .thin p.main-copy {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4em;
+      color: #1e1e1e;
+      margin-bottom: 25px; }
+    main section#about .thin button {
+      font-family: "Oswald", sans-serif;
+      font-weight: 700;
+      color: #fff;
+      background-color: #b72121;
+      color: #fff;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 10px 35px;
+      border: none; }
+
+main section#why-360 {
+  background-color: #fafafa;
+  padding: 50px 0;
+  text-align: center; }
+  main section#why-360 .container h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    color: #b72121;
+    font-size: 4em;
+    margin: 0 0 15px; }
+  main section#why-360 .container p.main-copy {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+    color: #1e1e1e;
+    margin-bottom: 50px; }
+  main section#why-360 .container h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    color: #b72121;
+    font-size: 1.4em;
+    text-transfrom: uppercase;
+    margin-top: 25px; }
+
+section#site-photos .container-fluid #top-photos {
+  margin-bottom: 10px; }
+
+section#site-photos .container-fluid .col-lg-3 {
+  margin: 0;
+  padding: 0; }
+  section#site-photos .container-fluid .col-lg-3 img.site-images {
+    width: 100%;
+    height: auto; }
+
+section#contact {
+  padding: 50px; }
+  section#contact h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    color: #b72121;
+    font-size: 4em;
+    margin: 0 0 15px;
+    text-align: center;
+    margin-bottom: 25px; }
+  section#contact form input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #1e1e1e;
+    font-family: "Open Sans", sans-serif; }
+  section#contact form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif; }
+  section#contact form input#button {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #b72121;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border: none;
+    width: 30%;
+    margin-top: 10px; }
 
 /* IT'S 2017, YOU'RE DAMN RIGHT IT'S MOBILE-ISH FRIENDLY */
