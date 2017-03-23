@@ -15,7 +15,7 @@
 
 <script src="https://use.fontawesome.com/5137a76561.js"></script>
 
- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,500,700" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,500,700" rel="stylesheet"> 
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="main.js"></script>
@@ -36,7 +36,7 @@
 				<ul>
 					<li>Qualifications</li>
 					<li>Careers</li>
-					<li>Contact Us</li>
+					<li><a href="#contact-form">Contact Us</a></li>
 				</ul>
 			</span>
 		</div>
@@ -66,7 +66,7 @@
 				<div class="col-lg-12">
 					<h2>About Us</h2>
 					<p class="main-copy">360 Civil is an all-encompassing, locally owned, civil construction company. We will provide demolition, excavation, utility, grading, trucking and asphalt services. 360 Civil is owned by Patrick Bourke and Jeremy Sheaffer. Both have been an integral part of successful companies within the heavy construction industry. We have developed strong skills, intimate relationships and the knowledge of the business from the ground up and are uniquely positioned in that we have been born and raised, grown and worked in the community 360 serves. Our Employee's are a very integral part of our business philosophy and success.</p>
-					<button>
+					<button class="main-button">
 						Past Projects
 					</button>
 				</div>
@@ -154,16 +154,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>Contact Us</h2>
+				<h2><a id="contact-form">Contact Us</a></h2>
 			</div>
 
 			<div class="col-lg-7">
-				<form>
+				<form method="post" action="contactform.php">
 					<input type="text" name="name" placeholder="Name"> <br>
 					<input type="email" name="email" placeholder="Email"> <br>
 					<input type="text" name="phone" placeholder="Phone"> <br>
-					<textarea rows="4" cols="50" name="comment">Message</textarea> <br>
-					<input id="button" type="submit" value="Submit">
+					<textarea name="message" rows="4" cols="50" placeholder="Message"></textarea> <br>
+					<input id="button" class="main-button" name="submit" type="submit" value="Submit">
 				</form>
 			</div>
 
@@ -173,8 +173,8 @@
 					<address>
 						<p class="address">1234 Main Street <br> Eagle, CO 81234</p>
 						<ul class="fa-ul">
-  							<li><i class="fa-li fa fa-phone"></i>(970) 123-4567</li>
-  							<li><i class="fa-li fa fa-envelope-o"></i>someone@360civil.com</li>
+  							<li><i class="fa-li fa fa-phone fa-fw"></i>(970) 123-4567</li>
+  							<li><i class="fa-li fa fa-envelope-o fa-fw"></i>someone@360civil.com</li>
 						</ul>
 					</address>
 				</div>
